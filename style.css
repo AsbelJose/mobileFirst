@@ -29,14 +29,253 @@
 
 html
 {
-	font-size: 62.5%;
+	font-size: 62.5%; /* 10px = 1rem */
     font-family: var(--font-sans), sans-serif;
     box-sizing: border-box;
 }
 
-*, *:before, *:after
+*, *::before, *::after
 {
 	box-sizing: inherit;
 	margin:0;
 	padding:0;
 }
+
+header
+{
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	width: 100%;
+	min-width: 32rem;
+	height: 33.4rem;
+	text-align: center;
+	background:linear-gradient(207.8deg, #201E1C 16.69%, #F7931A 100%);
+}
+
+header img
+{
+	width: 15rem;
+	height: 2.4rem;
+	margin-top: 6rem;
+}
+
+.header__title__container
+{
+	width: 90%;
+	min-width: 28.8rem;
+	max-width: 90rem;
+	height: 21.8rem;
+	margin-top: 4rem;
+}
+
+.header__title__container h1
+{
+	font-size: 2.4rem;
+	font-weight:var(--bold);
+	/* altura entre lineas */
+	line-height: 2.6rem;
+	color:var(--just-white)
+}
+
+.header__title__container p
+{
+	margin-top: 2.5rem;
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: var(--soft-orange);
+}
+
+.header__title__container .header__button {
+	position: absolute;
+	top: 27rem;
+	left: calc(50% - 11.5rem);
+	display: block;
+	margin-top: 3.5rem;
+	padding: 1.5rem;
+	width: 22.9rem;
+	height: 4.8rem;
+	background-color: var(--off-white);
+	/* sombra */
+	box-shadow: 0rem 0.4rem 0.8rem rgba(89, 73, 30, 0.16);
+	border: none;
+	border-radius: 0.5rem;
+	font-size: 1.4rem;
+	font-weight: bold;
+	text-decoration: none;
+	color: var(--black);
+}
+
+.header__button span
+{
+	display: inline-block;
+	width: 1.3rem;
+	height: 0.8rem;
+	margin-left: 1rem;
+	background-image: url('./assets/icons/down-arrow.svg');
+}
+
+main
+{
+	width: 100%;
+	/* tamaño minimo mobil s */
+	min-width: 32rem;
+	height: auto;
+	background-color: var(--off-white);
+}
+
+.main__exchange__container
+{
+	width: 100%;
+	height: auto;
+	padding-top: 8rem;
+	padding-bottom: 3rem;
+	text-align: center;
+}
+
+.main__exchange__container__title
+{
+	width: 90%;
+	min-width: 23.8rem;
+	max-width: 90rem;
+	margin: 0 auto;
+}
+
+.main__exchange__container .backgroundImg
+{
+	width: 20rem;
+	height: 20rem;
+	margin: 0 auto;
+	margin-bottom: 5rem; 
+	background-image: url('./assets/img/Bitcoin.svg');
+	/* cuando la imagen comienza a crecer */
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.main__exchange__container h2 
+{
+	margin-bottom: 3rem;
+	font-size: 2.4rem;
+	font-weight: var(--bold);
+	line-height: 2.6rem;
+	color: var(--black);
+}
+
+.main__exchange__container p
+{
+	margin-bottom: 3rem;
+	font-size: 1.4rem;
+	font-weight: var(--normal);
+	line-height: 1.6rem;
+	color: #757575;
+}
+
+.currency
+{
+	font-family: var(--font-inter), sans-serif;
+}
+
+.currency__table
+{
+	/* controla el tamaño de la tabla */
+	width: 63%;
+	min-width: 23rem;
+	max-width: 30rem;
+	height: 36rem;
+	margin: 0 auto;
+	display: flex;
+	flex-direction: column;
+}
+
+.currency__table .currency__table__title
+{
+	margin-bottom: 1.5rem;
+	color: var(--bitcoin-orange);
+	font-weight: var(--bold);
+	font-size: 1.8rem;
+	line-height: 2.3rem;
+}
+
+.currency__grid__container
+{
+	width: 100%;
+	height: 25rem;
+	display: grid;
+	grid-template-columns: 1fr 1fr;
+	gap: 0.3rem;
+	border-radius: 0.8rem;
+	color: #757575;
+	margin-bottom: 1.5rem;
+}   
+
+.currency__grid__container .grid__child
+{
+	display: flex;
+	align-items: center;
+	justify-content: left;
+	background-color: var(--just-white);
+	font-size: 2rem;
+	font-weight: var(--normal);
+	padding-left: 1rem;
+}
+
+.currency__grid__container .grid__child:nth-child(1) 
+{
+	border-radius: 1.5rem 0 0 0;
+}
+
+.currency__grid__container .grid__child:nth-child(2) 
+{
+	border-radius: 0 1.5rem 0 0;
+}
+
+.currency__grid__container .grid__child:nth-child(7) 
+{
+	border-radius: 0 0 0 1.5rem;
+}
+
+.currency__grid__container .grid__child:nth-child(8) 
+{
+	border-radius: 0 0 1.5rem 0;
+}
+
+.grid__child span 
+{
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+	display:inline-block;
+	width: 2rem;
+	height: 2rem;
+	margin-left: 1rem;
+}
+
+.grid__child .up
+{
+	background-image: url(./assets/icons/trending-up.svg);
+}
+
+.grid__child .down
+{
+	background-image: url(./assets/icons/trending-down.svg);
+} 
+
+.currency__table .currency__table__update
+{
+	background-color: var(--soft-orange);
+	border-radius: 0.8rem;
+}
+
+.currency__table__update p
+{
+	margin: 0.7rem;
+	font-size: 1.2rem;
+	color: var(--black);
+	font-weight: var(--bold);
+}
+
