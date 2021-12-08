@@ -18,7 +18,7 @@
     /* colores */
 	--bitcoin-orange: #f7931a;
 	--soft-orange: #ffe9d5;
-	--secondary-blue: #1a9af7;
+	--secondary-blue: #1a9bf7af;
 	--soft-blue: #e7f5ff;
 	--warm-black: #282623;
 	--black: #201e1c;
@@ -178,6 +178,17 @@ main
 .currency
 {
 	font-family: var(--font-inter), sans-serif;
+	/* indica que los elementos (id=table1 y id=table2) dentro de este container se desplazaran: 
+		smooth: desplazamiento suave
+		overflow-x desplazamiento horizontal
+	*/
+}
+
+.currency__container1, .currency__containe2{
+	/* flex: 0 0 auto; */
+	width: 100%;
+	min-width: 32rem;
+	margin: 0 auto;
 }
 
 .currency__table
@@ -199,6 +210,11 @@ main
 	font-weight: var(--bold);
 	font-size: 1.8rem;
 	line-height: 2.3rem;
+}
+
+#table2 .currency__table__title 
+{
+	color: var(--secondary-blue);
 }
 
 .currency__grid__container
@@ -278,4 +294,12 @@ main
 	color: var(--black);
 	font-weight: var(--bold);
 }
+
+#table2 .currency__table__update 
+{
+	background-color: var(--secondary-blue);
+	border-radius: 0.8rem;
+	color: var(--just-white);
+}
+
 
