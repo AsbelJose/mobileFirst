@@ -21,7 +21,7 @@
 	--secondary-blue: #1a9bf7af;
 	--soft-blue: #e7f5ff;
 	--warm-black: #282623;
-	--black: #201e1c;
+	--black: #383737dc;
 	--grey: #bababa;
 	--off-white: #faf8f7;
 	--just-white: #fff; 
@@ -302,4 +302,115 @@ main
 	color: var(--just-white);
 }
 
+/* estilo de la seccion de  beneficios */
 
+.main__product__detail
+{
+	position: relative;
+	width: 100%;
+	min-width: 32rem;
+	height:auto;
+	/* padding para las tarjetas internas */
+	padding: 2rem 1rem;
+	background-color: var(--warm-black);
+}
+
+.product__detail__batata__logo
+{
+	position: absolute;
+	top: -1.2rem;
+	/* 2rem la mitad del witdh del elemento */
+	left: calc(50% - 2rem);
+	width: 4rem;
+	height: 2.5rem;
+	background-image: url('./assets/icons/batata.svg');
+}
+
+.product__detail__title
+{
+	width: 90%;
+	min-width: 28.8rem;
+	height: auto;
+	margin: 0 auto;
+	margin-top: 5rem;
+	text-align: center;
+}
+
+.product__detail__title h2
+{
+	margin-bottom: 2rem;
+	font-size: 2.4rem;
+	font-weight: var(--bold);
+	line-height: 2.6rem;
+	color:var(--just-white)
+}
+
+.product__detail__title p
+{
+	margin-bottom: 2rem;
+	font-size: 1.4rem;
+	font-weight: var(--normal);
+	color: #808080;
+}
+
+/* estilos de las tarjetas */
+
+.product__detail__card
+{
+	width: 90%;
+	min-width: 28.8rem;
+	max-width: 40rem;
+	height: 15rem;
+	margin: 1.5rem auto;
+	padding: 1.5rem;
+	background-color: var(--black);
+	border-radius: 0.5rem;
+	box-shadow: 0 0.4rem 0.8rem rgba(0, 0, 0, 0.16);
+}
+
+/* estilo de iconos*/
+
+.product__detail__card .icon__card
+{
+	display: inline-block;
+	width: 2rem;
+	height: 2rem;
+	margin-bottom: 1rem;
+	background-size: cover;
+	background-position: center;
+	background-repeat: no-repeat;
+}
+
+.clock
+{
+	background-image: url('./assets/icons/clock.svg');
+}
+
+.eye {
+    background-image: url('./assets/icons/eye.svg')
+}
+
+.dollar {
+    background-image: url('./assets/icons/dollar-sign.svg');
+}
+
+.circle{
+    background-image: url('./assets/icons/check-circle.svg');
+}
+
+.product__card__title
+{
+	margin-bottom: 1.5rem;
+	font-size: 1.8rem;
+	font-weight: bold;
+	line-height: 1.8rem;
+	color: var(--just-white);
+}
+
+.product__card__body
+{
+	font-size: 1.4rem;
+	font-weight: 500;
+	line-height: 1.8rem;
+	color: #808080;
+}
