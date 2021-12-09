@@ -494,10 +494,10 @@ main
 	/* intenta centra la tarjeta cuando se hace scroll */
 	scroll-snap-align: center;
 	width: 70%;
-	min-width: 230px;
+	min-width: 190px;
 	max-width: 300px;
 	height: 250px;
-	margin: 50px 60px 0;
+	margin: 50px 5px 0;
 	padding: 0 15px;
 	background-color: var(--just-white);
 	border-radius: 15px;
@@ -580,4 +580,39 @@ main
 	background-repeat: no-repeat;
 	background-size: cover;
 	vertical-align: text-bottom;
+}
+
+/* footer */
+
+footer
+{
+	display: flex;
+	align-items: center;
+	justify-content: space-evenly;
+	width: 100%;
+	height: 150px;
+	background-color: var(--bitcoin-orange);
+}
+
+footer .footer__left ul
+{
+	font-size: 1.4rem;
+	font-weight: 500px;
+	line-height: 1.8rem;
+	list-style: none;
+}
+
+.footer__left li
+{
+	margin: 10px 0;
+}
+
+.footer__left a
+{
+	text-decoration: none;
+	color: var(--just-white);
+}
+
+.footer__left a:hover {
+    text-decoration: underline;
 }
