@@ -414,3 +414,170 @@ main
 	line-height: 1.8rem;
 	color: #808080;
 }
+
+/* estilo de la sección comodín */
+
+.bitcoin__img__container
+{
+	width: 100%;
+	min-width: 32rem;
+	height: 50vh;
+	background-image:url(./assets/img/bitcoinbaby2x.jpg);
+	background-position: center;
+	background-size: cover;
+	background-repeat: no-repeat;
+}
+
+.bitcoin__img__container h2
+{
+	padding-top: 6rem;
+	font-size: 2.4rem;
+	font-weight: var(--bold);
+	line-height: 2.6rem;
+	color: var(--just-white);
+	text-align: center;
+}
+
+/* estilos de la sección de planes */
+
+.main__plans__container
+{
+	width: 100%;
+	min-width: 32rem;
+	padding-bottom: 7rem;
+	text-align: center;
+}
+
+.plans__title
+{
+	width: 90%;
+	min-width: 28.8rem;
+	height: auto;
+	margin: 0 auto;
+	margin-bottom: 5rem;
+}
+
+.plans__title h2
+{
+	padding-top: 5rem;
+	font-size: 2.4rem;
+	font-weight: bold;
+	line-height: 2.6rem;
+	color: var(--warm-black);
+}
+
+.plans__title p
+{
+	padding-top: 3rem;
+	font: 1.4rem;
+	font-weight: var(--normal);
+	line-height: 1.8rem;
+	color: #757575;
+}
+
+/* scroll */
+
+.plans__container__slider
+{
+	display: flex;
+	/* un poco mas alto que las tarjetas */
+	height: 316px;
+	overflow-x:scroll;
+	overscroll-behavior-x: contain;
+	scroll-snap-type: x mandatory;
+	scroll-padding: 50%;
+}
+
+.plans__container__card
+{
+	position: relative;
+	/* intenta centra la tarjeta cuando se hace scroll */
+	scroll-snap-align: center;
+	width: 70%;
+	min-width: 230px;
+	max-width: 300px;
+	height: 250px;
+	margin: 50px 60px 0;
+	padding: 0 15px;
+	background-color: var(--just-white);
+	border-radius: 15px;
+	box-shadow: 0 4px 8px rgba(89, 73, 30, 0.16);
+}
+
+.plans__container__card .recommended, .basic, .limit
+{
+	position: absolute;
+	width: 120px;
+	height: 31px;
+	top:-15px;
+	left: calc(50% - 60px);
+	font-size: 1.2rem;
+	padding: 6px;
+	background-color: var(--bitcoin-orange);
+	border-radius: 8px;
+	color: var(--just-white);
+}
+
+.plans__container__card .basic{
+    background-color: var(--secondary-blue);
+}
+
+.plans__container__card .limit{
+    background-color: purple;
+}
+
+.plan__card__title
+{
+	padding-top: 30px;
+	font-size: 1.4rem;
+	font-weight: 500px;
+	line-height: 1.8rem;
+	color: var(--black);
+}
+
+.plan__card_price
+{
+	padding: 5px 0;
+	font-size: 5.2rem;
+	font-weight: bold;
+	color: black;
+}
+
+.plan__card_price sup
+{
+	font-size: 2rem;
+	font-weight: 300;
+}
+
+.plan__card__saving
+{
+	font-size: 1.2rem;
+	color:#757575;
+}
+
+.plan__card__ca
+{
+	width: 150px;
+	height: 48px;
+	margin-top: 20px;
+	background-color: #faf8f7;
+	border: 2px solid var(--bitcoin-orange);
+	border-radius: 4px;
+	font-family: "DM Sans", sans-serif;
+	font-size: 1.4rem;
+	font-weight: bold;
+	line-height: 1.8rem;
+	color: var(--warm-black);
+}
+
+.plan__card__ca span
+{
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+	background-image: url("./assets/icons/orange-right-arrow.svg");
+	background-position: center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	vertical-align: text-bottom;
+}
