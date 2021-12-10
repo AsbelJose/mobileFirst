@@ -1,0 +1,19 @@
+.currency
+{
+    width: 930px;
+    margin: 0 auto;
+}
+
+.product__cards__container
+{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    width: 930px;
+    margin: 0 auto;
+}
+
+.plans__container__slider
+{
+    justify-content:center;
+}
+

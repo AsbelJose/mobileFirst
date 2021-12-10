@@ -8,6 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&family=Inter:wght@400;500&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="./style.css">
+    <link rel="stylesheet" href="./css/tablet.css" media="(min-width:930px)">
 </head>
 <body>
     <header>
@@ -26,40 +27,46 @@
                 <p>Traemos información en tiempo real de las casas de cambio y las moendas mas importantes del mundo</p>
             </div>
             <section class="currency">
-                <div class="currency__table" id="table1">
-                    <p class="currency__table__title">Monedas</p>
-                    <div class="currency__grid__container">
-                        <div class="grid__child">Bitcoin</div>
-                        <div class="grid__child">$ 1.96 <span class="down"></span></div>
-                        <div class="grid__child">Ethereum</div>
-                        <div class="grid__child">$ 0.07 <span class="up"></span></div>
-                        <div class="grid__child">Ripple</div>
-                        <div class="grid__child">$ 2.15 <span class="down"></span></div>
-                        <div class="grid__child">Stellar</div>
-                        <div class="grid__child">$ 4.96 <span class="down"></span></div>
+                <div class="currency__container1">
+                    <div class="currency__table" id="table1">
+                        <p class="currency__table__title">Monedas</p>
+                        <div class="currency__grid__container">
+                            <div class="grid__child">Bitcoin</div>
+                            <div class="grid__child">$ 1.96 <span class="down"></span></div>
+                            <div class="grid__child">Ethereum</div>
+                            <div class="grid__child">$ 0.07 <span class="up"></span></div>
+                            <div class="grid__child">Ripple</div>
+                            <div class="grid__child">$ 2.15 <span class="down"></span></div>
+                            <div class="grid__child">Stellar</div>
+                            <div class="grid__child">$ 4.96 <span class="down"></span></div>
+                        </div>
+                        <div class="currency__table__update">
+                            <p><b>Actualizado:</b> 19 de Julio 23:45</p>
+                        </div>                    
                     </div>
-                    <div class="currency__table__update">
-                        <p><b>Actualizado:</b> 19 de Julio 23:45</p>
-                    </div>                    
+                    <a href="#table2"><img src="/assets/icons/chevron_right_black_24dp.svg" alt=""></a>   
                 </div>
-                <a href="#table2"><img src="/assets/icons/chevron_right_black_24dp.svg" alt=""></a>
-                <div class="currency__table commision-mod" id="table2">
-                    <p class="currency__table__title">Comisiones</p>
-                    <div class="currency__grid__container">
-                        <div class="grid__child">Bitrade</div>
-                        <div class="grid__child">$ 12.96</div>
-                        <div class="grid__child">Bitpreco</div>
-                        <div class="grid__child">$ 13.07</div>
-                        <div class="grid__child">Novadax</div>
-                        <div class="grid__child">$ 14.15</div>
-                        <div class="grid__child">Coinext</div>
-                        <div class="grid__child">$ 14.96</div>
+                
+                <div class="currency__container2">
+                    <a href="#table1"><img src="/assets/icons/chevron_left_black_24dp.svg" alt=""></a> 
+                    <div class="currency__table commision-mod" id="table2">
+                        <p class="currency__table__title">Comisiones</p>
+                        <div class="currency__grid__container">
+                            <div class="grid__child">Bitrade</div>
+                            <div class="grid__child">$ 12.96</div>
+                            <div class="grid__child">Bitpreco</div>
+                            <div class="grid__child">$ 13.07</div>
+                            <div class="grid__child">Novadax</div>
+                            <div class="grid__child">$ 14.15</div>
+                            <div class="grid__child">Coinext</div>
+                            <div class="grid__child">$ 14.96</div>
+                        </div>
+                        <div class="currency__table__update">
+                            <p><b>Actualizado:</b> 19 de Julio 23:45</p>
+                        </div>                    
                     </div>
-                    <div class="currency__table__update">
-                        <p><b>Actualizado:</b> 19 de Julio 23:45</p>
-                    </div>                    
                 </div>
-                <a href="#table1"><img src="/assets/icons/chevron_left_black_24dp.svg" alt=""></a>
+                                
             </section>
         </section>
 		<section class="main__product__detail">
