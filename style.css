@@ -182,7 +182,7 @@ main
 	display: flex;
 	gap: 10px;
 	align-items: center;
-	overflow-x: auto;
+	overflow-x: hidden;
 	scroll-snap-type: x mandatory;
 }
 
